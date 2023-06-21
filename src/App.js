@@ -9,6 +9,7 @@ import SignOut from './Pages/SignOut';
 import Offers from './Pages/Offers';
 import ForgotPassword from './Pages/ForgotPassword';
 import Header from './Components/Header';
+import SignUp from './Pages/SignUp';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/forgotPassword' element={<ForgotPassword/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
       <Route path='/signOut' element={<SignOut/>}/>
+      <Route path='/signUp' element={<SignUp/>}/>
     </Routes>
    </Router>
    </>
