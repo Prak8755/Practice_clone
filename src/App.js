@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home';
 
 import Profile from './Pages/Profile';
@@ -8,12 +8,14 @@ import SignIn from './Pages/SignIn';
 import SignOut from './Pages/SignOut';
 import Offers from './Pages/Offers';
 import ForgotPassword from './Pages/ForgotPassword';
+import Header from './Components/Header';
 
 
 function App() {
   return (
    <>
    <Router>
+    <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/profile' element={<Profile/>}/>
@@ -26,5 +28,6 @@ function App() {
    </>
   );
 }
+
 
 export default App;
